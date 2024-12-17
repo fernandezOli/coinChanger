@@ -1,0 +1,75 @@
+.App {
+    text-align: center;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.Full-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
+    background: repeat url("./images/mur_crepi_120.png");
+}
+
+.Machine {
+    display: flex;
+    border-radius: 10px;
+    min-height: 400px;
+    background-color: #282c34;
+}
+
+.Div-left {
+    position: relative;
+    margin-left : 10px;
+    background-color: black;
+}
+
+.Div-view {
+    /* haut | droit | bas | gauche */
+    margin: 20px 10px 20px 10px;
+    border: 10px solid gainsboro;
+    height: 60%;
+    background-color: black;
+}
+
+.Div-push {
+    position: absolute;
+    margin-top: 20px;
+    bottom: 40px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: blue;
+}
+
+.Div-right {
+    color: black;
+    margin: 20px 20px 20px 10px;
+    background-color: greenyellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.Div-tokens {
+    margin: 5px 10px 10px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    /*flex-wrap: wrap;*/
+}
+
+.Input-amount {
+    margin: 0px 5px 0px 5px;
+}
+
+.Div-Refund {
+    margin: 5px 10px 10px 10px;
+    background-color: gainsboro;
+    /*flex-wrap: wrap;*/
+}
