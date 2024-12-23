@@ -20,27 +20,72 @@
 .Machine {
     display: flex;
     border-radius: 10px;
-    min-height: 400px;
+    min-height: 600px;
     background-color: #282c34;
 }
 
 .Div-left {
     position: relative;
-    margin-left : 10px;
+    margin-left : 5px;
     background-color: black;
+    min-width: 240px;
 }
 
 .Div-view {
     /* haut | droit | bas | gauche */
-    margin: 20px 10px 20px 10px;
-    border: 10px solid gainsboro;
-    height: 60%;
+    /*margin: 5px 0px 0px 0px;*/
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 10px solid #AFAFAF;
+    height: 430px;
     background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 218px;
+    align-items: center;
+    justify-content: center; /* center*/
+    align-content: center;
+}
+
+.Div-candy {
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 5px;
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.Div-candy-top
+{
+    height: 20px;
+    background-image: url("./images/candy-top.png");
+    background-size: 100% auto;
+}
+
+.Div-candy-middle
+{
+    height: 60px;
+    /*background-color: white;*/
+    background-image: url("./images/ethereum32.png"), url("./images/usdc32.png");
+    background-position: 0, right 8px;
+    background-repeat: repeat, repeat;
+    background-color: transparent;
+}
+
+.Div-candy-bottom
+{
+    height: 20px;
+    background-image: url("./images/candy-bottom.png");
+    background-size: 100% 100%;
 }
 
 .Div-push {
     position: absolute;
-    margin-top: 20px;
+    /*margin: 20px 20px 0px 0px;*/
     bottom: 40px;
     width: 100%;
     border-radius: 40px;
@@ -49,27 +94,73 @@
 
 .Div-right {
     color: black;
-    margin: 20px 20px 20px 10px;
+    /* haut | droit | bas | gauche */
+    margin: 40px 10px 20px 10px;
     background-color: greenyellow;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+    /* haut | droit | bas | gauche */
+    border-width: 0px 6px 0px 6px;
+    border-style: solid;
+    border-color: #addd2f;
+}
+
+.Cnx-button {
+    font-family: Arial, Helvetica, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*margin: 5px;*/
+    /*border-radius: 10px;*/
+    /*background: linear-gradient(#C5C5FF, #4d4df1, #C5C5FF);*/
+    background: linear-gradient(#C5C5FF, #4d4df1, #C5C5FF);
+    color: #FFFFFF;
+    cursor:pointer;
+    width: 100%;
+}
+
+.Cnx-button:disabled {
+  background: #c0c0c0;
 }
 
 .Div-tokens {
-    margin: 5px 10px 10px 10px;
-    padding: 5px;
-    border-radius: 5px;
+    margin: 5px auto 10px auto;
+    padding: 1px;
+    background-color: #AFAFAF;
+    max-width: 72px;
+    text-align: left;
+}
+
+.Tokens-icon {
+    border: 2px solid #AFAFAF;
     background-color: white;
-    /*flex-wrap: wrap;*/
+    cursor: pointer;
 }
 
 .Input-amount {
     margin: 0px 5px 0px 5px;
 }
 
-.Div-Refund {
-    margin: 5px 10px 10px 10px;
-    background-color: gainsboro;
-    /*flex-wrap: wrap;*/
+.Div-refund {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: greenyellow; /*#ADFF2F*/
+    border-radius: 10px;
+    /* haut | droit | bas | gauche */
+    border-width: 0px 6px 0px 6px;
+    border-style: solid;
+    border-color: #addd2f;
+    min-height: 100px;
+}
+
+.Align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Img-refund {
+    background: linear-gradient(#a0a0a0 52%, #404040 48%);
 }
